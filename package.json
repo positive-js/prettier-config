@@ -1,5 +1,5 @@
 {
-  "name": "prettier-config",
+  "name": "@ptsecurity/prettier-config",
   "version": "0.1.0",
   "description": "Positive Technologies prettier config.",
   "main": "prettier.config.js",
