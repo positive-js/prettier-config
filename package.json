@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/positive-js/prettier-config#readme",
   "devDependencies": {
-    "@commitlint/cli": "^6.0.2",
-    "@commitlint/config-angular": "^6.0.2",
-    "husky": "^0.14.3"
+    "@commitlint/cli": "6.0.2",
+    "@commitlint/config-angular": "6.0.2",
+    "husky": "0.14.3"
   }
 }
