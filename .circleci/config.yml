@@ -16,7 +16,7 @@ jobs:
             echo "npm $(npm -v)"
             echo "Yarn v$(yarn --version)"
       - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-      - run: npm publish --access gpublic
+      - run: npm publish --access public
   
 workflows:
   version: 2
