@@ -1,5 +1,9 @@
 # prettier-config
 
+[![CircleCI](https://circleci.com/gh/positive-js/prettier-config/tree/master.svg?style=shield)](https://circleci.com/gh/positive-js/prettier-config/tree/master)
+[![npm](https://img.shields.io/npm/v/@ptsecurity/prettier-config.svg)](https://www.npmjs.com/package/@ptsecurity/prettier-config)
+[![David-DM](https://david-dm.org/positive-js/prettier-config/status.svg)](https://david-dm.org/positive-js/prettier-config)
+
 # Usage
 
 1. `npm install --save-dev @ptsecurity/prettier-config prettier`
