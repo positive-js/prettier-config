@@ -1,3 +1,4 @@
+
 anchor_job_defaults: &job_defaults
   working_directory: ~/prettier-config
   docker:
@@ -5,7 +6,7 @@ anchor_job_defaults: &job_defaults
 
 version: 2
 jobs:
-  publish:
+  build:
     <<: *job_defaults
     steps:
       - checkout
@@ -15,13 +16,19 @@ jobs:
             echo "Node.js $(node -v)"
             echo "npm $(npm -v)"
             echo "Yarn v$(yarn --version)"
+
+  publish:
+    <<: *job_defaults
+    steps:
+      - checkout      
       - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       - run: npm publish --access public
-  
+
 workflows:
   version: 2
   default_workflow:
     jobs:
+      - build
       - publish:
           filters:
             branches:
