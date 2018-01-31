@@ -8,14 +8,14 @@
 
 1. `npm install --save-dev @ptsecurity/prettier-config prettier`
 
-2. In your project create .prettierrc.js with strings:
+2. In your project create .prettierrc.js with line:
 `module.exports = require('@ptsecurity/prettier-config');`
 
 # Optionally
 
 1. `npm install --save-dev husky lint-staged`
 
-2. Add strings to your package.json
+2. Add lines to your package.json
 ```
     "scripts": {
         "precommit": "lint-staged"
@@ -26,7 +26,6 @@
         }
     }
 ```
-
 3. Optionally add [plugins](https://prettier.io/docs/en/related-projects.html)
 
 
