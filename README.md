@@ -11,11 +11,18 @@
 2. In your project create .prettierrc.js with line:
 `module.exports = require('@ptsecurity/prettier-config');`
 
-# Optionally
+## Usage with tslint
+
+Better if prettier and tslint handles different files especcially if there are custom rules.
+
+## Optional using (as git hook)
+
+**This may not work as expected in Webstorm.**
 
 1. `npm install --save-dev husky lint-staged`
 
-2. Add lines to your package.json
+2. Add lines to your package.json, select type of files for formatting.
+As example:
 ```
     "scripts": {
         "precommit": "lint-staged"
@@ -26,6 +33,6 @@
         }
     }
 ```
-3. Optionally add [plugins](https://prettier.io/docs/en/related-projects.html)
+3. Optionally add [plugins](https://prettier.io/docs/en/related-projects.html) depending on the using and priorities your tools.
 
 
