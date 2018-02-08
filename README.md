@@ -13,7 +13,7 @@
 
 ## Usage with tslint
 
-Better if prettier and tslint handles different files especcially if there are custom rules.
+Better if prettier and tslint will handle different files especcially if there are custom rules.
 
 ## Optional using (as git hook)
 
